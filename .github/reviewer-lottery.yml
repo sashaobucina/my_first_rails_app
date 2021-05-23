@@ -1,0 +1,5 @@
+groups:
+  name: some-dev-group
+  reviewers: 1
+  usernames:
+    - sashaobucina
