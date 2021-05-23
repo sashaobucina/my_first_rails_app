@@ -7,8 +7,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Randomly assign reviewer to dependabot PRs
-        - uses: action/checkout@v1
-        - uses: uesteibar/reviewer-lottery@v1
-          with:
-            repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: action/checkout@v1
+      - uses: uesteibar/reviewer-lottery@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
